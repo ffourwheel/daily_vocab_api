@@ -1,6 +1,13 @@
 from fastapi import FastAPI,HTTPException
 from app.schemas import WordResponse
-from app.routers import words
+from app.routers import words,practice
+from fastapi.middleware.cors import CORSMiddleware
+from app.database import Base, engine
+from sqlalchemy.orm import Session
+from app.database import get_db
+
+Base.metadata.create_all(bind=engine)
+
 # Initialize FastAPI app
 app = FastAPI(
     title="Vocabulary Practice API",
