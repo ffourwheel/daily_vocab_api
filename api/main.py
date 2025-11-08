@@ -3,8 +3,6 @@ from app.schemas import WordResponse
 from app.routers import words,practice
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import Base, engine
-from sqlalchemy.orm import Session
-from app.database import get_db
 
 Base.metadata.create_all(bind=engine)
 
@@ -19,6 +17,20 @@ app.include_router(
     words.router,
     prefix='/api',
     tags=["words"]
+)
+
+app.include_router(
+    practice.router,
+    prefix='/api',
+    tags=["practice"]
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # @app.get("/api/word", response_model=WordResponse)
