@@ -23,5 +23,15 @@ INSERT INTO words (word, definition, difficulty_level) VALUES
 ('ambitious', 'Having a strong desire to succeed', 'Intermediate'),
 ('perseverance', 'Continued effort despite difficulties', 'Advanced'),
 ('library', 'A place where books are kept for reading', 'Beginner'),
-('collaborate', 'To work together with others', 'Intermediate');
-
+('collaborate', 'To work together with others', 'Intermediate'),
+('ocean', 'A large body of salt water that covers most of the Earth', 'Beginner'),
+('mountain', 'A large natural elevation of the earth''s surface', 'Beginner'),
+('forest', 'A large area covered chiefly with trees and undergrowth', 'Beginner'),
+('river', 'A large natural stream of water flowing in a channel to the sea', 'Beginner'),
+('desert', 'A barren area of landscape where little precipitation occurs', 'Beginner'),
+('garden', 'A piece of ground for growing flowers, vegetables, or herbs', 'Beginner'),
+('beach', 'A pebbly or sandy shore by the ocean or a lake', 'Beginner'),
+('city', 'A large town', 'Beginner'),
+('school', 'An institution for educating children', 'Beginner'),
+('university', 'An institution of higher learning', 'Intermediate'),
+('technology', 'The application of scientific knowledge for practical purposes', 'Intermediate');
